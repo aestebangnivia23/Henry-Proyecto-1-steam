@@ -1,5 +1,11 @@
 from fastapi import FastAPI
 import pandas as pd
+import gdown
+
+url = "https://drive.google.com/uc?id=ID_DE_TU_ARCHIVO"
+output = "./data/recomendacion_juego.parquet"
+gdown.download(url, output, quiet=False)
+
 
 app = FastAPI()
 
