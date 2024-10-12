@@ -2,9 +2,22 @@ from fastapi import FastAPI
 import pandas as pd
 import gdown
 
-url = "https://drive.google.com/uc?id=ID_DE_TU_ARCHIVO"
-output = "./data/recomendacion_juego.parquet"
+# URL del archivo en Google Drive
+url = 'https://drive.google.com/uc?id=17bNn9xjxHFwXDPRRlou96Lkq5dJhcQdO'
+
+# Ruta donde deseas guardar el archivo
+output = './data/recomendacion_juego.parquet'
+
+# Descarga el archivo
 gdown.download(url, output, quiet=False)
+
+# Ahora puedes leer el archivo parquet
+import pandas as pd
+df_recomendacion_juego = pd.read_parquet(output)
+
+# Usa el DataFrame según tu lógica
+print(df_recomendacion_juego.head())
+
 
 
 app = FastAPI()
