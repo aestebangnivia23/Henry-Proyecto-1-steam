@@ -61,4 +61,5 @@ Cálculo de la similaridad de coseno: Para cada par de juegos, se calcula el cos
 Generación de recomendaciones: Se recomienda al usuario aquellos juegos con una mayor similaridad de coseno respecto al juego consultado.
 ## Video demostrativo:
 En el siguiente video se muestra el funcionamiento de la API y se ejemplifican las consultas realizadas, incluyendo el sistema de recomendación.
+https://youtu.be/oD1ZF8xtb-w
 
